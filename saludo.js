@@ -328,3 +328,80 @@ const copiaCanasta2 = canasta.filter( (item) =>  item !== 'pan' );
 console.log('copiaCanasta2=', copiaCanasta2);
 
 */
+
+// const val1 = parseInt(prompt("Ingrese el primer valor"))
+// const val2 = parseInt(prompt("Ingrese el segundo valor"))
+
+// function mayorMenor(val1, val2) {
+//     if (val1 > val2) return `el numero mayor es ${val1} y el menor es ${val2}`
+//     if (val2 > val1) return `el numero mayor es ${val2} y el menor es ${val1}`
+//     return "los numeros son iguales"
+// }
+// const resultado = mayorMenor(val1, val2)
+// alert(resultado)
+
+// const fecha = new Date(prompt("Ingrese una fecha en formato MM/DD/AAAA"))
+// let diaSemana = fecha.getDay()
+// alert(`El dia de la semana es ${diaSemana}`)
+
+
+
+
+// const listaDeCompras = {
+//     leche: 2,
+//     pan: 1,
+//     huevos: 12,
+//     carne: 1,
+//     verduras: 5,
+// }
+
+// for (alimentos in listaDeCompras) {
+//     console.log(alimentos);
+// }
+// for (alimentos in listaDeCompras) {
+//     console.log(`${alimentos} : ${listaDeCompras[alimentos]}`);
+// }
+
+// let contador = 0
+// while (contador < 10) {
+//     console.log(contador)
+//     contador++
+// }
+
+// function calculatedDiscountPrice(price, discountPercentage) {
+//     const discount = (price * discountPercentage) / 100;
+//     const priceWithDiscount = price - discount;
+//     return priceWithDiscount;
+// }
+
+// const originalPrice = 100;
+// const discountPercentage = 20;
+// const finalPrice = calculatedDiscountPrice(originalPrice, discountPercentage);
+// console.log(`El precio original es $${originalPrice}, con un descuento del ${discountPercentage}%, el precio final es $${finalPrice}`);
+
+// const rocket = {
+//     name: 'Falcon 9',
+//     launchMessage: function launchMessage() {
+//         console.log(`El cohete ${this.name} ha despegado!`);
+//     }
+// }
+
+// rocket.launchMessage();
+// console.log(rocket.name);
+
+//guarden en 2 variables los resultados de 2 funciones y impriman las variables con ls resultados
+
+
+const newGreeting = (name) => {
+    return `Hola ${name}, ¿cómo estás?`
+}
+
+const newGreetingImplicit = name => `Hola ${name}, ¿cómo estás?`
+
+
+const saludo1 = newGreeting("Mundo");
+const saludo2 = newGreetingImplicit("arroz");
+
+
+console.log(saludo1);
+console.log(saludo2);
