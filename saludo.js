@@ -392,16 +392,112 @@ console.log('copiaCanasta2=', copiaCanasta2);
 //guarden en 2 variables los resultados de 2 funciones y impriman las variables con ls resultados
 
 
-const newGreeting = (name) => {
-    return `Hola ${name}, ¿cómo estás?`
-}
+// const newGreeting = (name) => {
+//     return `Hola ${name}, ¿cómo estás?`
+// }
 
-const newGreetingImplicit = name => `Hola ${name}, ¿cómo estás?`
-
-
-const saludo1 = newGreeting("Mundo");
-const saludo2 = newGreetingImplicit("arroz");
+// const newGreetingImplicit = name => `Hola ${name}, ¿cómo estás?`
 
 
-console.log(saludo1);
-console.log(saludo2);
+// const saludo1 = newGreeting("Mundo");
+// const saludo2 = newGreetingImplicit("arroz");
+
+
+// console.log(saludo1);
+// console.log(saludo2);
+
+// const fruits = Array('apple', 'banana', 'orange');
+// console.log(fruits);
+// console.log(fruits.length);
+
+// const justOneNumber = Array(12);
+// console.log(justOneNumber);
+// console.log(justOneNumber.length);
+
+// const nums = Array(1,2,3,4,5);
+// console.log(nums);
+// console.log(nums.length);
+
+// const newNums = [12, 'Teylork']
+// console.log(newNums);
+// console.log(newNums.length);
+
+// const recipeIngredients = [
+//     'Flour',
+//     true,
+//     2,
+//     {
+//         ingredient: 'Milk', quantity: '1 cup'
+//     },
+//     false
+// ];
+// console.log(recipeIngredients);
+// console.log(recipeIngredients.length);
+
+// const fruits = ['apple', 'banana', 'orange'];
+
+// fruits.push('grape');
+// console.log(fruits);
+
+// const newFruits = fruits.concat('kiwi', 'mango');
+// console.log(newFruits);
+
+// const isArray = Array.isArray(fruits);
+// console.log(isArray);
+
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// let suma = 0;
+
+// for (const num of numbers) {
+//     suma += num;
+// }
+
+// console.log(suma);
+
+// const tripledNumbers = numbers.map(num => num * 3);
+// console.log(tripledNumbers);
+
+// const mayorA3 = numbers.filter(num => num > 3);
+// console.log(mayorA3);
+
+// console.log(numbers.slice(2, 4));
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function compareNumbers(a, b) {
+//     return a - b;
+// }
+
+// // console.log(numbers);
+// // console.log(numbers.pop());
+// // numbers.sort(compareNumbers);
+
+// console.log(numbers.find(num => num > 6));
+// console.log(numbers.findIndex(num => num > 4));
+
+// console.log(numbers);
+
+// const carrito = [
+//     { nombre: 'Monitor 20 pulgadas', precio: 700000 },
+//     { nombre: 'Televisión 50 pulgadas', precio: 700000 },
+//     { nombre: 'Tablet', precio: 300000 },
+// ]
+
+// let total = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+
+// console.log(`El total del carrito es: $${total}`);
+
+
+const palabras = ['hola', 'mundo', 'es', 'hola', 'javascript', 'es', 'genial', 'javascript'];
+
+const palabrasFrecuente = palabras.reduce((contador, palabra) => {
+    if (contador[palabra]) {
+        contador[palabra] ++;
+    } else {
+        contador[palabra] = 1;
+    }
+    return contador;
+}, {});
+
+console.log(palabrasFrecuente);
